@@ -1,0 +1,34 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="device string translator">
+  <meta name="author" content="Rob">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+
+    <input id="myinput" type="text" name="string">
+    <button onclick="decodethis()"> translate </button>    
+    <button onclick="document.getElementById('myinput').value = ''"> clear </button>    
+
+
+    <table id="mytable">
+        <th>string</th>
+        <th>temperatura</th>
+        <th>umidita</th>
+        <th>pressione</th>
+        <th>contatore</th>
+    </table>
+
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+#mytable {
+    margin: 20px;
+    border: 1px solid black;
+}
+
+#mytable tr {
+    border: 1px solid gray;
+    text-align: center
+}
+
+
+#mytable td, #mytable th  {
+    min-width: 120px;
+}
