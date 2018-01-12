@@ -1,5 +1,4 @@
 function decodethis() {
-    document.getElementById('myinput').value = '4fc0e32025e3000400000000';
     var encodedString = document.getElementById('myinput').value
     var val1 = encodedString.split('').splice(0,4).join('');
     var val2 = encodedString.split('').splice(4,4).join('');
