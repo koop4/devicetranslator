@@ -7,6 +7,7 @@ function decodethis() {
 
     val1 = parseInt(val1, 16);
     val2 = parseInt(val2, 16);
+    val2 = val2 > 32767 ? 65536 + 16384 - val2 : val2;
     val3 = parseInt(val3, 16);
     val4 = parseInt(val4, 16);
 
