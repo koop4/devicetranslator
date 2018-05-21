@@ -5,15 +5,17 @@ function decodethis() {
     var val3 = encodedString.split('').splice(8,4).join('');
     var val4 = encodedString.split('').splice(12,4).join('');
 
+
+        val3 = parseInt(val3,16) * 10;
+    
+    
     val1 = parseInt(val1, 16);
     val2 = parseInt(val2, 16);
     val2 = val2 > 32767 ? 65536 + 16384 - val2 : val2;
-    val3 = parseInt(val3, 16);
-    val4 = parseInt(val4, 16);
-
-    val1 = (-46.85 + (175.72 * ( val1 / 65536 ))).toFixed(2);
     val2 = (-6 + (125 * ( val2 / 65536 ))).toFixed(2); 
+    val3 = parseInt(val3, 16);
     val3 = val3 * 10;
+    val4 = parseInt(val4, 16);
 
     console.log('Coded String', encodedString);
     console.log('Temperatura', val1);
