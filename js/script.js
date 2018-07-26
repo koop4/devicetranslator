@@ -10,7 +10,7 @@ function decodethis() {
     
     
     val1 = parseInt(val1, 16);
-    val1 = val1 > 32767 ? 65536 + 32767 - val1 : val1;
+    val1 = val1 > 32767 ? 65536 + 16348 - val1 : val1;
     val1 = (-46.85 + (175.72 * ( val1 / 65536 ))).toFixed(2);
     val2 = parseInt(val2, 16);
     val2 = val2 > 32767 ? 65536 + 32767 - val2 : val2;
